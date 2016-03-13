@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{09d49646-1331-445d-be4a-2f60cec4c0a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="State">
+      <UniqueIdentifier>{4b3e2736-1052-4eb0-9804-d8d25c802d0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Device">
+      <UniqueIdentifier>{07cdcd0c-d32e-4e34-af21-2835418f6255}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{22b98c9a-8167-4a12-999c-d643cd198126}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{42c05694-321e-41dd-9427-8e6ba22023bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Font">
+      <UniqueIdentifier>{b661edb1-e834-4dba-bda0-4a43b11ca571}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{0a10d2fd-f52b-4a0a-a390-f8c6341889b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderTech">
+      <UniqueIdentifier>{2b712977-5c5d-4622-aef6-1b2cf6c12487}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderTech\Shadow">
+      <UniqueIdentifier>{4eaeb28f-df83-4147-ac18-6ed0b9150a6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{317e9099-c979-4743-8a19-1773a2d095fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Camera">
+      <UniqueIdentifier>{e15d2f73-3ad6-4d7f-8ec7-d1c1920536c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Context">
+      <UniqueIdentifier>{14dea8c2-8fb1-437d-8771-95b84ac5dfdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\DrawItem">
+      <UniqueIdentifier>{07ae63c6-9339-41f7-a4db-189cb527c6d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXTK">
+      <UniqueIdentifier>{dbf7f04c-f9b0-45d8-9304-a66412860d1d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Stdafx.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Resource\GfxTeture2D.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Resource\GfxVertexBuffer.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Resource\GfxIndexBuffer.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Resource\GfxConstantBuffer.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\State\GfxSamplerState.h">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\State\GfxBlendState.h">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Device\GfxDeviceContext.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Resource\GfxInputLayout.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Resource\GfxShaderResourceView.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\System\GfxCoreSystem.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Device\GfxSwapChain.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Resource\GfxDepthStencil.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Util\GfxD3DPtr.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Resource\GfxRenderTarget.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\GfxLib.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\State\GfxRasterizerState.h">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\State\GfxDepthStencilState.h">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Font\GfxFontRenderer.h">
+      <Filter>Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Font\GfxFontSystem.h">
+      <Filter>Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Font\GfxFontData.h">
+      <Filter>Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Resource\GfxBuffer.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Shader\GfxShader.h">
+      <Filter>Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Shader\GfxVertexShader.h">
+      <Filter>Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Shader\GfxComputeShader.h">
+      <Filter>Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Shader\GfxPixelShader.h">
+      <Filter>Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Resource\GfxUnorderedAccessView.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Shader\GfxGeometryShader.h">
+      <Filter>Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\RenderTech\Shadow\GfxShadowSceneBase.h">
+      <Filter>RenderTech\Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\RenderTech\Shadow\GfxShadowScene.h">
+      <Filter>RenderTech\Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\RenderTech\Shadow\GfxShadowMapBase.h">
+      <Filter>RenderTech\Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\RenderTech\Shadow\GfxDepthShadowMap.h">
+      <Filter>RenderTech\Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Scene\Camera\GfxCamera.h">
+      <Filter>Scene\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Scene\DrawItem\GfxDrawItem.h">
+      <Filter>Scene\DrawItem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Util\GfxRenderTargetStack.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Scene\Context\GfxDrawContext.h">
+      <Filter>Scene\Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\DirectXTK\DDSTextureLoader.h">
+      <Filter>DirectXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\DirectXTK\PlatformHelpers.h">
+      <Filter>DirectXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\DirectXTK\dds.h">
+      <Filter>DirectXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\DirectXTK\DirectXHelpers.h">
+      <Filter>DirectXTK</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Stdafx.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Resource\GfxTeture2D.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Resource\GfxIndexBuffer.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Resource\GfxVertexBuffer.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Resource\GfxConstantBuffer.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\State\GfxSamplerState.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\State\GfxBlendState.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Device\GfxDeviceContext.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Resource\GfxInputLayout.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Resource\GfxShaderResourceView.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\System\GfxCoreSystem.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Device\GfxSwapChain.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Resource\GfxDepthStencil.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Resource\GfxRenderTarget.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\State\GfxRasterizerState.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\State\GfxDepthStencilState.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Font\GfxFontSystem.cpp">
+      <Filter>Font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Font\GfxFontData.cpp">
+      <Filter>Font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Font\GfxFontRenderer.cpp">
+      <Filter>Font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Resource\GfxBuffer.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shader\GfxShader.cpp">
+      <Filter>Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shader\GfxVertexShader.cpp">
+      <Filter>Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shader\GfxComputeShader.cpp">
+      <Filter>Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shader\GfxPixelShader.cpp">
+      <Filter>Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Resource\GfxUnorderedAccessView.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shader\GfxGeometryShader.cpp">
+      <Filter>Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RenderTech\Shadow\GfxShadowSceneBase.cpp">
+      <Filter>RenderTech\Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RenderTech\Shadow\GfxShadowScene.cpp">
+      <Filter>RenderTech\Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RenderTech\Shadow\GfxShadowMapBase.cpp">
+      <Filter>RenderTech\Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RenderTech\Shadow\GfxDepthShadowMap.cpp">
+      <Filter>RenderTech\Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Scene\Camera\GfxCamera.cpp">
+      <Filter>Scene\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Scene\DrawItem\GfxDrawItem.cpp">
+      <Filter>Scene\DrawItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Util\GfxRenderTargetStack.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Scene\Context\GfxDrawContext.cpp">
+      <Filter>Scene\Context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\DirectXTK\DDSTextureLoader.cpp">
+      <Filter>DirectXTK</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="app.ico">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="..\Source\Device\GfxDeviceContext.inl">
+      <Filter>Device</Filter>
+    </None>
+    <None Include="..\Source\Util\GfxD3DPtr.inl">
+      <Filter>Util</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
