@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2637CA0C-A461-41D4-A426-70CE2846ACB4}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>GfxLib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\Develop\Libraries\XNAMath_205;$(ProjectDir)../Source;$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)..\dist\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\Develop\Libraries\XNAMath_205;$(ProjectDir)../Source;$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)..\dist\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\Device\GfxDeviceContext.h" />
+    <ClInclude Include="..\Source\Device\GfxSwapChain.h" />
+    <ClInclude Include="..\Source\DirectXTK\dds.h" />
+    <ClInclude Include="..\Source\DirectXTK\DDSTextureLoader.h" />
+    <ClInclude Include="..\Source\DirectXTK\DirectXHelpers.h" />
+    <ClInclude Include="..\Source\DirectXTK\PlatformHelpers.h" />
+    <ClInclude Include="..\Source\Font\GfxFontData.h" />
+    <ClInclude Include="..\Source\Font\GfxFontRenderer.h" />
+    <ClInclude Include="..\Source\Font\GfxFontSystem.h" />
+    <ClInclude Include="..\Source\GfxLib.h" />
+    <ClInclude Include="..\Source\RenderTech\Shadow\GfxDepthShadowMap.h" />
+    <ClInclude Include="..\Source\RenderTech\Shadow\GfxShadowMapBase.h" />
+    <ClInclude Include="..\Source\RenderTech\Shadow\GfxShadowScene.h" />
+    <ClInclude Include="..\Source\RenderTech\Shadow\GfxShadowSceneBase.h" />
+    <ClInclude Include="..\Source\Resource\GfxBuffer.h" />
+    <ClInclude Include="..\Source\Resource\GfxConstantBuffer.h" />
+    <ClInclude Include="..\Source\Resource\GfxDepthStencil.h" />
+    <ClInclude Include="..\Source\Resource\GfxIndexBuffer.h" />
+    <ClInclude Include="..\Source\Resource\GfxInputLayout.h" />
+    <ClInclude Include="..\Source\Resource\GfxRenderTarget.h" />
+    <ClInclude Include="..\Source\Resource\GfxShaderResourceView.h" />
+    <ClInclude Include="..\Source\Resource\GfxTeture2D.h" />
+    <ClInclude Include="..\Source\Resource\GfxUnorderedAccessView.h" />
+    <ClInclude Include="..\Source\Resource\GfxVertexBuffer.h" />
+    <ClInclude Include="..\Source\Scene\Camera\GfxCamera.h" />
+    <ClInclude Include="..\Source\Scene\Context\GfxDrawContext.h" />
+    <ClInclude Include="..\Source\Scene\DrawItem\GfxDrawItem.h" />
+    <ClInclude Include="..\Source\Shader\GfxComputeShader.h" />
+    <ClInclude Include="..\Source\Shader\GfxGeometryShader.h" />
+    <ClInclude Include="..\Source\Shader\GfxPixelShader.h" />
+    <ClInclude Include="..\Source\Shader\GfxShader.h" />
+    <ClInclude Include="..\Source\Shader\GfxVertexShader.h" />
+    <ClInclude Include="..\Source\State\GfxBlendState.h" />
+    <ClInclude Include="..\Source\State\GfxDepthStencilState.h" />
+    <ClInclude Include="..\Source\State\GfxRasterizerState.h" />
+    <ClInclude Include="..\Source\State\GfxSamplerState.h" />
+    <ClInclude Include="..\Source\System\GfxCoreSystem.h" />
+    <ClInclude Include="..\Source\Util\GfxD3DPtr.h" />
+    <ClInclude Include="..\Source\Util\GfxRenderTargetStack.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\Device\GfxDeviceContext.cpp" />
+    <ClCompile Include="..\Source\Device\GfxSwapChain.cpp" />
+    <ClCompile Include="..\Source\DirectXTK\DDSTextureLoader.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Source\Font\GfxFontData.cpp" />
+    <ClCompile Include="..\Source\Font\GfxFontRenderer.cpp" />
+    <ClCompile Include="..\Source\Font\GfxFontSystem.cpp" />
+    <ClCompile Include="..\Source\RenderTech\Shadow\GfxDepthShadowMap.cpp" />
+    <ClCompile Include="..\Source\RenderTech\Shadow\GfxShadowMapBase.cpp" />
+    <ClCompile Include="..\Source\RenderTech\Shadow\GfxShadowScene.cpp" />
+    <ClCompile Include="..\Source\RenderTech\Shadow\GfxShadowSceneBase.cpp" />
+    <ClCompile Include="..\Source\Resource\GfxBuffer.cpp" />
+    <ClCompile Include="..\Source\Resource\GfxConstantBuffer.cpp" />
+    <ClCompile Include="..\Source\Resource\GfxDepthStencil.cpp" />
+    <ClCompile Include="..\Source\Resource\GfxIndexBuffer.cpp" />
+    <ClCompile Include="..\Source\Resource\GfxInputLayout.cpp" />
+    <ClCompile Include="..\Source\Resource\GfxRenderTarget.cpp" />
+    <ClCompile Include="..\Source\Resource\GfxShaderResourceView.cpp" />
+    <ClCompile Include="..\Source\Resource\GfxTeture2D.cpp" />
+    <ClCompile Include="..\Source\Resource\GfxUnorderedAccessView.cpp" />
+    <ClCompile Include="..\Source\Resource\GfxVertexBuffer.cpp" />
+    <ClCompile Include="..\Source\Scene\Camera\GfxCamera.cpp" />
+    <ClCompile Include="..\Source\Scene\Context\GfxDrawContext.cpp" />
+    <ClCompile Include="..\Source\Scene\DrawItem\GfxDrawItem.cpp" />
+    <ClCompile Include="..\Source\Shader\GfxComputeShader.cpp" />
+    <ClCompile Include="..\Source\Shader\GfxGeometryShader.cpp" />
+    <ClCompile Include="..\Source\Shader\GfxPixelShader.cpp" />
+    <ClCompile Include="..\Source\Shader\GfxShader.cpp" />
+    <ClCompile Include="..\Source\Shader\GfxVertexShader.cpp" />
+    <ClCompile Include="..\Source\State\GfxBlendState.cpp" />
+    <ClCompile Include="..\Source\State\GfxDepthStencilState.cpp" />
+    <ClCompile Include="..\Source\State\GfxRasterizerState.cpp" />
+    <ClCompile Include="..\Source\State\GfxSamplerState.cpp" />
+    <ClCompile Include="..\Source\System\GfxCoreSystem.cpp" />
+    <ClCompile Include="..\Source\Util\GfxRenderTargetStack.cpp" />
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="Stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Source\Device\GfxDeviceContext.inl" />
+    <None Include="..\Source\Util\GfxD3DPtr.inl" />
+    <None Include="app.ico" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
