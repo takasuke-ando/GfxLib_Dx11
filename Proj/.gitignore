@@ -1,0 +1,8 @@
+
+*.user
+
+
+#ignore folders
+Debug/
+Release/
+

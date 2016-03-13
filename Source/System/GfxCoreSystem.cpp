@@ -5,6 +5,8 @@
 
 #include "GfxCoreSystem.h"
 
+//test
+//#include <d3d11_1.h>
 
 
 namespace GfxLib
@@ -48,7 +50,7 @@ BOOL	CoreSystem::Initialize()
 
 	UINT createDeviceFlags = 0;
 #ifdef _DEBUG
-	//createDeviceFlags |= D3D11_CREATE_DEVICE_DEBUG;
+	createDeviceFlags |= D3D11_CREATE_DEVICE_DEBUG;
 #endif
 
 	D3D_DRIVER_TYPE driverTypes[] =
@@ -93,6 +95,16 @@ BOOL	CoreSystem::Initialize()
 	}
 	if( FAILED( hr ) )
 		return FALSE;
+
+	/*
+	ID3D11Device1* d3d11_Device1 = nullptr;
+	m_pd3dDev->QueryInterface(__uuidof (ID3D11Device1), (void **)&d3d11_Device1);
+
+	if (d3d11_Device1) {
+		d3d11_Device1->Release();
+	}
+	*/
+
 
 
 	return TRUE;
